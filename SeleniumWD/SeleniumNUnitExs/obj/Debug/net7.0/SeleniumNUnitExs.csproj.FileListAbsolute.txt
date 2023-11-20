@@ -25,6 +25,7 @@ D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\bin\Debug\net7.0\Microsoft.Win32.Syst
 D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\bin\Debug\net7.0\Newtonsoft.Json.dll
 D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\bin\Debug\net7.0\NuGet.Frameworks.dll
 D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\bin\Debug\net7.0\nunit.framework.dll
+D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\bin\Debug\net7.0\WebDriver.Support.dll
 D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\bin\Debug\net7.0\WebDriver.dll
 D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\bin\Debug\net7.0\System.Drawing.Common.dll
 D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\bin\Debug\net7.0\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll
@@ -105,3 +106,4 @@ D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\obj\Debug\net7.0\refint\SeleniumNUnit
 D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\obj\Debug\net7.0\SeleniumNUnitExs.pdb
 D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\obj\Debug\net7.0\SeleniumNUnitExs.genruntimeconfig.cache
 D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\obj\Debug\net7.0\ref\SeleniumNUnitExs.dll
+D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\bin\Debug\net7.0\SeleniumExtras.WaitHelpers.dll
