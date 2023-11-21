@@ -125,10 +125,20 @@ namespace SeleniumNUnitExs
 
             emailInput.SendKeys(email);
             passwordInput.SendKeys(pwd);
+            TakeScreenShot();
+
+            IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
+            js.ExecuteScript("arguments[0].scrollIntoView(true); ", driver.FindElement(By.XPath("//button[@type = 'submit']")));
+            Thread.Sleep(5000);
+            js.ExecuteScript("arguments[0].click(); ", driver.FindElement(By.XPath("//button[@type = 'submit']")));
+
+
             ClearForm(emailInput);
             ClearForm(passwordInput);
 
-            Thread.Sleep(3000);
+            //Thread.Sleep(TimeSpan.FromSeconds(5));
+
+            //Thread.Sleep(3000);
 
         }
         static object[] InvalidLoginData()
@@ -139,5 +149,16 @@ namespace SeleniumNUnitExs
                 new object[] { "default@xyz.com", "5678" },
             };
         }
-    }
+        /*
+        public void TakeScreenShot()
+        {
+            ITakesScreenshot iss = (ITakesScreenshot)driver;
+            Screenshot ss = iss.GetScreenshot();
+
+            string currdir = Directory.GetParent(@"../../../").FullName;
+            string filepath = currdir + "/Screenshots/ss_" + DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".png";
+
+            ss.SaveAsFile(filepath);
+        }*/
+    }   
 }
