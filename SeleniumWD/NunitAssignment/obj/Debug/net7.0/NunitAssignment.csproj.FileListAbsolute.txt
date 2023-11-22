@@ -1,5 +1,8 @@
 D:\Selenium-C#\SeleniumWD\NunitAssignment\bin\Debug\net7.0\testhost.dll
 D:\Selenium-C#\SeleniumWD\NunitAssignment\bin\Debug\net7.0\testhost.exe
+D:\Selenium-C#\SeleniumWD\NunitAssignment\bin\Debug\net7.0\selenium-manager\linux\selenium-manager
+D:\Selenium-C#\SeleniumWD\NunitAssignment\bin\Debug\net7.0\selenium-manager\macos\selenium-manager
+D:\Selenium-C#\SeleniumWD\NunitAssignment\bin\Debug\net7.0\selenium-manager\windows\selenium-manager.exe
 D:\Selenium-C#\SeleniumWD\NunitAssignment\bin\Debug\net7.0\NUnit3.TestAdapter.dll
 D:\Selenium-C#\SeleniumWD\NunitAssignment\bin\Debug\net7.0\NUnit3.TestAdapter.pdb
 D:\Selenium-C#\SeleniumWD\NunitAssignment\bin\Debug\net7.0\nunit.engine.dll
@@ -18,9 +21,12 @@ D:\Selenium-C#\SeleniumWD\NunitAssignment\bin\Debug\net7.0\Microsoft.TestPlatfor
 D:\Selenium-C#\SeleniumWD\NunitAssignment\bin\Debug\net7.0\Microsoft.TestPlatform.CrossPlatEngine.dll
 D:\Selenium-C#\SeleniumWD\NunitAssignment\bin\Debug\net7.0\Microsoft.TestPlatform.Utilities.dll
 D:\Selenium-C#\SeleniumWD\NunitAssignment\bin\Debug\net7.0\Microsoft.VisualStudio.TestPlatform.Common.dll
+D:\Selenium-C#\SeleniumWD\NunitAssignment\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
 D:\Selenium-C#\SeleniumWD\NunitAssignment\bin\Debug\net7.0\Newtonsoft.Json.dll
 D:\Selenium-C#\SeleniumWD\NunitAssignment\bin\Debug\net7.0\NuGet.Frameworks.dll
 D:\Selenium-C#\SeleniumWD\NunitAssignment\bin\Debug\net7.0\nunit.framework.dll
+D:\Selenium-C#\SeleniumWD\NunitAssignment\bin\Debug\net7.0\WebDriver.dll
+D:\Selenium-C#\SeleniumWD\NunitAssignment\bin\Debug\net7.0\System.Drawing.Common.dll
 D:\Selenium-C#\SeleniumWD\NunitAssignment\bin\Debug\net7.0\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll
 D:\Selenium-C#\SeleniumWD\NunitAssignment\bin\Debug\net7.0\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
 D:\Selenium-C#\SeleniumWD\NunitAssignment\bin\Debug\net7.0\de\Microsoft.TestPlatform.CoreUtilities.resources.dll
@@ -86,6 +92,8 @@ D:\Selenium-C#\SeleniumWD\NunitAssignment\bin\Debug\net7.0\zh-Hans\Microsoft.Vis
 D:\Selenium-C#\SeleniumWD\NunitAssignment\bin\Debug\net7.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 D:\Selenium-C#\SeleniumWD\NunitAssignment\bin\Debug\net7.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 D:\Selenium-C#\SeleniumWD\NunitAssignment\bin\Debug\net7.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+D:\Selenium-C#\SeleniumWD\NunitAssignment\bin\Debug\net7.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\Selenium-C#\SeleniumWD\NunitAssignment\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 D:\Selenium-C#\SeleniumWD\NunitAssignment\obj\Debug\net7.0\NunitAssignment.csproj.AssemblyReference.cache
 D:\Selenium-C#\SeleniumWD\NunitAssignment\obj\Debug\net7.0\NunitAssignment.GeneratedMSBuildEditorConfig.editorconfig
 D:\Selenium-C#\SeleniumWD\NunitAssignment\obj\Debug\net7.0\NunitAssignment.AssemblyInfoInputs.cache
@@ -97,11 +105,3 @@ D:\Selenium-C#\SeleniumWD\NunitAssignment\obj\Debug\net7.0\refint\NunitAssignmen
 D:\Selenium-C#\SeleniumWD\NunitAssignment\obj\Debug\net7.0\NunitAssignment.pdb
 D:\Selenium-C#\SeleniumWD\NunitAssignment\obj\Debug\net7.0\NunitAssignment.genruntimeconfig.cache
 D:\Selenium-C#\SeleniumWD\NunitAssignment\obj\Debug\net7.0\ref\NunitAssignment.dll
-D:\Selenium-C#\SeleniumWD\NunitAssignment\bin\Debug\net7.0\selenium-manager\linux\selenium-manager
-D:\Selenium-C#\SeleniumWD\NunitAssignment\bin\Debug\net7.0\selenium-manager\macos\selenium-manager
-D:\Selenium-C#\SeleniumWD\NunitAssignment\bin\Debug\net7.0\selenium-manager\windows\selenium-manager.exe
-D:\Selenium-C#\SeleniumWD\NunitAssignment\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
-D:\Selenium-C#\SeleniumWD\NunitAssignment\bin\Debug\net7.0\WebDriver.dll
-D:\Selenium-C#\SeleniumWD\NunitAssignment\bin\Debug\net7.0\System.Drawing.Common.dll
-D:\Selenium-C#\SeleniumWD\NunitAssignment\bin\Debug\net7.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
-D:\Selenium-C#\SeleniumWD\NunitAssignment\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
