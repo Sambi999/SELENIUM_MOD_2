@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace BunnyCart.TestScripts
 {
     [TestFixture]
-    internal class SearchTests : Corecode
+    internal class SearchTests : CoreCodes
     {
         [Test]
         [TestCase("Water", 2)]
@@ -18,7 +18,7 @@ namespace BunnyCart.TestScripts
         {
             BunnyCartHomePage bchp = new BunnyCartHomePage(driver);
             var searchResultPage = bchp?.TypeSearchInput(searchtext);
-            Corecode.ScrollIntoView(driver, driver.FindElement(By.XPath("//*[@id=\'amasty-shopby-product-list\']/div[2]/ol/li[1]")));
+            CoreCodes.ScrollIntoView(driver, driver.FindElement(By.XPath("//*[@id=\'amasty-shopby-product-list\']/div[2]/ol/li[1]")));
             //Assert.That(searchtext.Equals(searchResultPage?.GetFirstProductLink()));
             Thread.Sleep(3000);
             var productPage = searchResultPage?.ClickFirstProductLink(count);
@@ -31,6 +31,4 @@ namespace BunnyCart.TestScripts
             Thread.Sleep(5000);
         }
     }
-
-
 }

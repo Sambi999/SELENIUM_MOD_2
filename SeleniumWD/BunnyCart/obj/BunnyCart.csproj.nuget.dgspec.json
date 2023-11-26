@@ -57,6 +57,18 @@
               "target": "Package",
               "version": "[3.11.0, )"
             },
+            "ExcelDataReader": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
+            "ExcelDataReader.DataSet": {
+              "target": "Package",
+              "version": "[3.6.0, )"
+            },
+            "ExtentReports": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.7.1, )"
