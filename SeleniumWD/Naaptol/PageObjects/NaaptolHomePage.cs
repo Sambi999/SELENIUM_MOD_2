@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿
+using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
 using System;
 using System.Collections.Generic;
@@ -20,12 +21,15 @@ namespace Naaptol.PageObjects
         //Arrange
         [FindsBy(How = How.Id, Using = "header_search_text")]
         public IWebElement? SearchInputBox { get; set; }
-
+       
         //Act
-        public void SearchClick(string productName)
+        public void SearchClick(string searchText)
         {
-            SearchInputBox?.SendKeys(productName);
+            SearchInputBox?.SendKeys(searchText);
             SearchInputBox?.SendKeys(Keys.Enter);
         }
+       
     }
+
+    
 }

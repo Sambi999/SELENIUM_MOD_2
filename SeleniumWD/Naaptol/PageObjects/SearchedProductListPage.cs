@@ -18,7 +18,7 @@ namespace Naaptol.PageObjects
         }
 
         //Arrange
-        [FindsBy(How = How.XPath, Using = "//div[@id='productItem5' and @pid='12612074']")]
+        [FindsBy(How = How.XPath, Using = "//*[@id=\"productItem5\"]/div[1]/a")]
         public IWebElement? SelectProduct { get; set; }
 
         //Act
