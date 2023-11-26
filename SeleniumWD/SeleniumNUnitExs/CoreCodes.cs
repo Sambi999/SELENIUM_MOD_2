@@ -3,23 +3,21 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Edge;
 using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SeleniumNUnitExs
+namespace SeleniumNUnitExamples
 {
-
-    internal class CoreCodes
+    public class CoreCodes
     {
         Dictionary<string, string>? properties;
         public IWebDriver driver;
         public void ReadConfigSettings()
         {
-            string currDir = Directory.GetParent(@"../../../").FullName;
+            string currentDirectory = Directory.GetParent(@"../../../").FullName;
             properties = new Dictionary<string, string>();
-            string fileName = currDir + "/configsettings/config.properties";
+            string fileName = currentDirectory + "/ConfigSettings/Config.properties";
             string[] lines = File.ReadAllLines(fileName);
             foreach (string line in lines)
             {
@@ -31,22 +29,6 @@ namespace SeleniumNUnitExs
                     properties[key] = value;
                 }
             }
-
-        }
-        [OneTimeSetUp]
-        public void InitializeBrowser()
-        {
-            ReadConfigSettings();
-            if (properties["browser"].ToLower() == "chrome" )
-            {
-                driver = new ChromeDriver();
-            }
-            else if (properties["browser"].ToLower() == "edge")
-            {
-                driver = new EdgeDriver();
-            }
-            driver.Url = properties["baseUrl"];
-            driver.Manage().Window.Maximize();
         }
         public bool CheckLinkStatus(string url)
         {
@@ -65,20 +47,41 @@ namespace SeleniumNUnitExs
                 return false;
             }
         }
+
+        [OneTimeSetUp]
+        public void InitializeBrowser()
+        {
+            ReadConfigSettings();
+            if (properties["browser"].ToLower() == "chrome")
+            {
+                driver = new ChromeDriver();
+            }
+            else if (properties["browser"].ToLower() == "edge")
+            {
+                driver = new EdgeDriver();
+            }
+            driver.Url = properties["baseUrl"];
+            driver.Manage().Window.Maximize();
+        }
+
         [OneTimeTearDown]
         public void Cleanup()
         {
             driver.Quit();
         }
+
+
         public void TakeScreenShot()
         {
-            ITakesScreenshot iss = (ITakesScreenshot)driver;
-            Screenshot ss = iss.GetScreenshot();
+            ITakesScreenshot takesScreenshot = (ITakesScreenshot)driver;
+            Screenshot screenshot = takesScreenshot.GetScreenshot();
 
-            string currdir = Directory.GetParent(@"../../../").FullName;
-            string filepath = currdir + "/Screenshots/ss_" + DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".png";
+            string currDir = Directory.GetParent(@"../../../").FullName;
+            string filename = currDir + "/Screenshots/ss_" + DateTime.Now.ToString("yyyy/MM/dd_HHmmss") + ".png";
 
-            ss.SaveAsFile(filepath);
+            screenshot.SaveAsFile(filename);
+            Console.WriteLine("Takes screenshot");
+
         }
     }
 }

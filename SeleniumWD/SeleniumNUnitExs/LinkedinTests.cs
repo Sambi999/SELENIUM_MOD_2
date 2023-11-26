@@ -1,164 +1,159 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.DevTools.V118.FedCm;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
+using SeleniumNUnitExs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SeleniumNUnitExs
+namespace SeleniumNUnitExamples
 {
     [TestFixture]
     internal class LinkedinTests : CoreCodes
     {
         [Test]
-        [Author("Sambi", "sambi@ust.com")]
-        [Description("Check for Valid Login")]
-        [Category("Regression Testing")]
-        public void LoginTest()
+        [Author("Brunda", "brunda@gmail.com")]
+        [Description("Check for valid login")]
+        [Category("Regression testing")]
+        public void Login1Test()
         {
-            //driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(3);
+            //Implicit wait
+            //driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
 
-            //WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(3));
+            //Explicit wait
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
 
-            // IWebElement emailInput = wait.Until(ExpectedConditions.ElementIsVisible(By.Id("session_key")));
-            // IWebElement passwordInput = wait.Until(ExpectedConditions.ElementIsVisible(By.Id("session_password")));
+            //old method Explicit
+            //IWebElement emailInput = wait.Until(ExpectedConditions.ElementIsVisible(By.Id("session_key")));
+            //IWebElement passwordInput= wait.Until(ExpectedConditions.ElementIsVisible(By.Id("session_password")));
 
-            //IWebElement emailInput = wait.Until(driv => driv.FindElement(By.Id("session_key")));
-            //IWebElement passwordInput = wait.Until(driv => driv.FindElement(By.Id("session_password")));
+            ////new method Explicit
+            //IWebElement emailInput = wait.Until(d=>d.FindElement(By.Id("session_key")));
+            //IWebElement passwordInput = wait.Until(d=>d.FindElement(By.Id("session_password")));
 
+
+            //fluent wait
             DefaultWait<IWebDriver> fluentWait = new DefaultWait<IWebDriver>(driver);
-            fluentWait.Timeout = TimeSpan.FromSeconds(5);
+            fluentWait.Timeout = TimeSpan.FromSeconds(10);
             fluentWait.PollingInterval = TimeSpan.FromMilliseconds(100);
             fluentWait.IgnoreExceptionTypes(typeof(NoSuchElementException));
-            fluentWait.Message = "Element Not Found";
+            fluentWait.Message = "Element not found";
 
-            IWebElement emailInput = fluentWait.Until(driv => driv.FindElement(By.Id("session_key")));
-            IWebElement passwordInput = fluentWait.Until(driv => driv.FindElement(By.Id("session_password")));
-
-            emailInput.SendKeys("abd@tuv.com");
-            passwordInput.SendKeys("18909");
-
-
+            IWebElement emailInput = fluentWait.Until(d => d.FindElement(By.Id("session_key")));
+            IWebElement passwordInput = fluentWait.Until(d => d.FindElement(By.Id("session_password")));
+            emailInput.SendKeys("abc@gmail.com");
+            passwordInput.SendKeys("12345");
         }
-        /*
-        [Test, Author("Sambi", "sambi@ust.com")]
-        [Description("Check for Invalid Login"), Category("Smoke Testing")]
 
-        public void LoginTestInvalidCred()
-        {
 
-            DefaultWait<IWebDriver> fluentWait = new DefaultWait<IWebDriver>(driver);
-            fluentWait.Timeout = TimeSpan.FromSeconds(5);
-            fluentWait.PollingInterval = TimeSpan.FromMilliseconds(100);
-            fluentWait.IgnoreExceptionTypes(typeof(NoSuchElementException));
-            fluentWait.Message = "Element Not Found";
+        //[Test]
+        //[Author("Brunda", "brunda@gmail.com")]
+        //[Description("Check for invalid login")]
+        //[Category("Smoke testing")]
+        //public void LoginTestWithInvalidData()
+        //{
+        //    DefaultWait<IWebDriver> fluentWait = new DefaultWait<IWebDriver>(driver);
+        //    fluentWait.Timeout = TimeSpan.FromSeconds(10);
+        //    fluentWait.PollingInterval = TimeSpan.FromMilliseconds(100);
+        //    fluentWait.IgnoreExceptionTypes(typeof(NoSuchElementException));
+        //    fluentWait.Message = "Element not found";
 
-            IWebElement emailInput = fluentWait.Until(driv => driv.FindElement(By.Id("session_key")));
-            IWebElement passwordInput = fluentWait.Until(driv => driv.FindElement(By.Id("session_password")));
+        //    IWebElement emailInput = fluentWait.Until(d => d.FindElement(By.Id("session_key")));
+        //    IWebElement passwordInput = fluentWait.Until(d => d.FindElement(By.Id("session_password")));
+        //    emailInput.SendKeys("abc@gmail.com");
+        //    passwordInput.SendKeys("123");
+        //    Thread.Sleep(3000);
+        //    ClearForm(emailInput);
+        //    ClearForm(passwordInput);
 
-            emailInput.SendKeys("abd@tuv.com");
-            passwordInput.SendKeys("18909");
-            Thread.Sleep(3000);
-            ClearForm(emailInput);
-            ClearForm(passwordInput);
+        //    emailInput.SendKeys("def@gmail.com");
+        //    passwordInput.SendKeys("456");
+        //    Thread.Sleep(3000);
+        //    ClearForm(emailInput);
+        //    ClearForm(passwordInput);
 
-            emailInput.SendKeys("yedgye@uede.com");
-            passwordInput.SendKeys("39434");
-            Thread.Sleep(3000);
-            ClearForm(emailInput);
-            ClearForm(passwordInput);
+        //    emailInput.SendKeys("ghi@gmail.com");
+        //    passwordInput.SendKeys("789");
+        //    Thread.Sleep(3000);
+        //    ClearForm(emailInput);
+        //    ClearForm(passwordInput);
 
-            emailInput.SendKeys("euhe@wywue.com");
-            passwordInput.SendKeys("745847");
-            Thread.Sleep(3000);
-            ClearForm(emailInput);
-            ClearForm(passwordInput);
-
-            Thread.Sleep(3000);
-        }*/
+        //    Thread.Sleep(3000);
+        //}
         void ClearForm(IWebElement element)
         {
             element.Clear();
         }
 
-        /*
-        [Test, Author("MMM", "abc@xyz.com")]
-        [Description("Check for Invaid Login"), Category("Regression Testing")]
-        [TestCase("abd@tuv.com", "18909")]
-        [TestCase("yedgye@uede.com", "39434")]
-        [TestCase("euhe@wywue.com", "745847")]
-        public void LoginTestWithInvalidCred(string email, string pwd)
-        {
-            DefaultWait<IWebDriver> fluentWait = new DefaultWait<IWebDriver>(driver);
-            fluentWait.Timeout = TimeSpan.FromSeconds(5);
-            fluentWait.PollingInterval = TimeSpan.FromMilliseconds(100);
-            fluentWait.IgnoreExceptionTypes(typeof(NoSuchElementException));
-            fluentWait.Message = "Element Not Found";
 
-            IWebElement emailInput = fluentWait.Until(driv => driv.FindElement(By.Id("session_key")));
-            IWebElement passwordInput = fluentWait.Until(driv => driv.FindElement(By.Id("session_password")));
+        //[Test]
+        //[Author("AAA", "AAA@gmail.com")]
+        //[Description("Check for invalid login")]
+        //[Category("Regression testing")]
+        //[TestCase("abc@gmail.com","123")]
+        //[TestCase("def@gmail.com","456")]
+        //[TestCase("ghi@gmail.com","789")]
+        //public void LoginTestWithInvalidData(string email,string password)
+        //{
+        //    DefaultWait<IWebDriver> fluentWait = new DefaultWait<IWebDriver>(driver);
+        //    fluentWait.Timeout = TimeSpan.FromSeconds(10);
+        //    fluentWait.PollingInterval = TimeSpan.FromMilliseconds(100);
+        //    fluentWait.IgnoreExceptionTypes(typeof(NoSuchElementException));
+        //    fluentWait.Message = "Element not found";
 
-            emailInput.SendKeys(email);
-            passwordInput.SendKeys(pwd);
-            ClearForm(emailInput);
-            ClearForm(passwordInput);
+        //    IWebElement emailInput = fluentWait.Until(d => d.FindElement(By.Id("session_key")));
+        //    IWebElement passwordInput = fluentWait.Until(d => d.FindElement(By.Id("session_password")));
 
-            Thread.Sleep(3000);
+        //    emailInput.SendKeys(email); 
+        //    passwordInput.SendKeys(password);
+        //    ClearForm(emailInput);
+        //    ClearForm(passwordInput);
 
-        }*/
-        [Test, Author("MMM", "abc@xyz.com")]
-        [Description("Check for Invaid Login"), Category("Regression Testing")]
+        //}
+
+        [Test]
+        [Author("AAA", "AAA@gmail.com")]
+        [Description("Check for invalid login")]
+        [Category("Regression testing")]
         [TestCaseSource(nameof(InvalidLoginData))]
-        public void LoginTestWithInvalidCred(string email, string pwd)
+        public void LoginTestWithInvalidData(string email, string password)
         {
             DefaultWait<IWebDriver> fluentWait = new DefaultWait<IWebDriver>(driver);
-            fluentWait.Timeout = TimeSpan.FromSeconds(5);
+            fluentWait.Timeout = TimeSpan.FromSeconds(10);
             fluentWait.PollingInterval = TimeSpan.FromMilliseconds(100);
             fluentWait.IgnoreExceptionTypes(typeof(NoSuchElementException));
-            fluentWait.Message = "Element Not Found";
+            fluentWait.Message = "Element not found";
 
-            IWebElement emailInput = fluentWait.Until(driv => driv.FindElement(By.Id("session_key")));
-            IWebElement passwordInput = fluentWait.Until(driv => driv.FindElement(By.Id("session_password")));
+            IWebElement emailInput = fluentWait.Until(d => d.FindElement(By.Id("session_key")));
+            IWebElement passwordInput = fluentWait.Until(d => d.FindElement(By.Id("session_password")));
 
             emailInput.SendKeys(email);
-            passwordInput.SendKeys(pwd);
+            passwordInput.SendKeys(password);
             TakeScreenShot();
 
             IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
-            js.ExecuteScript("arguments[0].scrollIntoView(true); ", driver.FindElement(By.XPath("//button[@type = 'submit']")));
+            js.ExecuteScript("arguments[0].scrollIntoView(true);", driver.FindElement(By.XPath("//button[@type='submit']")));
+
             Thread.Sleep(5000);
-            js.ExecuteScript("arguments[0].click(); ", driver.FindElement(By.XPath("//button[@type = 'submit']")));
+            js.ExecuteScript("arguments[0].click();", driver.FindElement(By.XPath("//button[@type='submit']")));
 
 
             ClearForm(emailInput);
             ClearForm(passwordInput);
-
-            //Thread.Sleep(TimeSpan.FromSeconds(5));
-
-            //Thread.Sleep(3000);
 
         }
         static object[] InvalidLoginData()
         {
             return new object[]
             {
-                new object[] { "abc@xyz.com", "1234" },
-                new object[] { "default@xyz.com", "5678" },
+                new object[] {"abc@gmail.com","123"},
+                new object[] {"def@gmail.com","456"},
+
             };
         }
-        /*
-        public void TakeScreenShot()
-        {
-            ITakesScreenshot iss = (ITakesScreenshot)driver;
-            Screenshot ss = iss.GetScreenshot();
 
-            string currdir = Directory.GetParent(@"../../../").FullName;
-            string filepath = currdir + "/Screenshots/ss_" + DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".png";
 
-            ss.SaveAsFile(filepath);
-        }*/
-    }   
+    }
 }

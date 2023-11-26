@@ -1,6 +1,6 @@
+D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\bin\Debug\net7.0\selenium-manager\linux\selenium-manager
 D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\bin\Debug\net7.0\testhost.dll
 D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\bin\Debug\net7.0\testhost.exe
-D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\bin\Debug\net7.0\selenium-manager\linux\selenium-manager
 D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\bin\Debug\net7.0\selenium-manager\macos\selenium-manager
 D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\bin\Debug\net7.0\selenium-manager\windows\selenium-manager.exe
 D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\bin\Debug\net7.0\NUnit3.TestAdapter.dll
@@ -13,6 +13,7 @@ D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\bin\Debug\net7.0\SeleniumNUnitExs.dep
 D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\bin\Debug\net7.0\SeleniumNUnitExs.runtimeconfig.json
 D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\bin\Debug\net7.0\SeleniumNUnitExs.dll
 D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\bin\Debug\net7.0\SeleniumNUnitExs.pdb
+D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\bin\Debug\net7.0\SeleniumExtras.WaitHelpers.dll
 D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\bin\Debug\net7.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\bin\Debug\net7.0\Microsoft.TestPlatform.CoreUtilities.dll
 D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\bin\Debug\net7.0\Microsoft.TestPlatform.PlatformAbstractions.dll
@@ -106,4 +107,7 @@ D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\obj\Debug\net7.0\refint\SeleniumNUnit
 D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\obj\Debug\net7.0\SeleniumNUnitExs.pdb
 D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\obj\Debug\net7.0\SeleniumNUnitExs.genruntimeconfig.cache
 D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\obj\Debug\net7.0\ref\SeleniumNUnitExs.dll
-D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\bin\Debug\net7.0\SeleniumExtras.WaitHelpers.dll
+D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\bin\Debug\net7.0\ExcelDataReader.dll
+D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\bin\Debug\net7.0\ExcelDataReader.DataSet.dll
+D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\bin\Debug\net7.0\System.Text.Encoding.CodePages.dll
+D:\Selenium-C#\SeleniumWD\SeleniumNUnitExs\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Text.Encoding.CodePages.dll
