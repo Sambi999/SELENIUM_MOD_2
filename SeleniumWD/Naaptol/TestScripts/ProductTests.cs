@@ -51,44 +51,43 @@ namespace Naaptol.TestScripts
 
             foreach (var excelData in excelDataList)
             {
-
-                string? searchText = excelData.SearchText;
+                string? searchText = excelData?.SearchText;
                 Console.WriteLine($"Search text: {searchText}");
                 naaptolhomepage.SearchClick(excelData.SearchText);
                 TakeScreenShot();
-
-
-                var searchedProductListPage = new SearchedProductListPage(driver);
-                searchedProductListPage.SelectedProduct();
-
-                List<string> nextwindow = driver.WindowHandles.ToList();
-                driver.SwitchTo().Window(nextwindow[1]);
-
-
-                var buyNow = new SearchedFifthProductPage(driver);
-                buyNow.Sizeselect();
-
-                buyNow.BuyNowButtonClicked();
-                TakeScreenShot();
-
-
-                string? qtyincrease = excelData?.QtyIncrease;
-                Console.WriteLine($"Qty increase: {qtyincrease}");
-                buyNow.QtyIncrease(excelData.QtyIncrease);
-
-
-                buyNow.ClickRemove();
-                Thread.Sleep(3000);
-                buyNow.CloseButtonClicked();
-                TakeScreenShot();
-
-                driver.Close();
-                Thread.Sleep(5000);
-                driver.SwitchTo().Window(nextwindow[0]);
-                driver.SwitchTo().DefaultContent();
-
-
             }
+
+            var searchedProductListPage = new SearchedProductListPage(driver);
+            searchedProductListPage.SelectedProduct();
+
+            List<string> nextwindow = driver.WindowHandles.ToList();
+            driver.SwitchTo().Window(nextwindow[1]);
+
+
+            var buyNow = new SearchedFifthProductPage(driver);
+            buyNow.Sizeselect();
+
+            buyNow.BuyNowButtonClicked();
+            TakeScreenShot();
+
+
+            // string?  qtyincrease = excelData?.QtyIncrease;
+            //Console.WriteLine($"Qty increase: {qtyincrease}");
+            buyNow.QtyIncrease();
+            Thread.Sleep(3000);
+
+            buyNow.ClickRemove();
+            Thread.Sleep(3000);
+            buyNow.CloseButtonClicked();
+            TakeScreenShot();
+
+            driver.Close();
+            Thread.Sleep(5000);
+            driver.SwitchTo().Window(nextwindow[0]);
+            driver.SwitchTo().DefaultContent();
+
+
+
         }
     }
 }
