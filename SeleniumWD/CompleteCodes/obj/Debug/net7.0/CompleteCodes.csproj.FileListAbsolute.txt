@@ -1,0 +1,5 @@
+D:\Selenium-C#\SeleniumWD\CompleteCodes\obj\Debug\net7.0\CompleteCodes.csproj.AssemblyReference.cache
+D:\Selenium-C#\SeleniumWD\CompleteCodes\obj\Debug\net7.0\CompleteCodes.GeneratedMSBuildEditorConfig.editorconfig
+D:\Selenium-C#\SeleniumWD\CompleteCodes\obj\Debug\net7.0\CompleteCodes.AssemblyInfoInputs.cache
+D:\Selenium-C#\SeleniumWD\CompleteCodes\obj\Debug\net7.0\CompleteCodes.AssemblyInfo.cs
+D:\Selenium-C#\SeleniumWD\CompleteCodes\obj\Debug\net7.0\CompleteCodes.csproj.CoreCompileInputs.cache
