@@ -1,0 +1,7 @@
+2023-11-27 21:17:45.837 +05:30 [INF] Create Account Test Strated
+2023-11-27 21:17:52.915 +05:30 [INF] Create Account Link Clicked
+2023-11-27 21:17:54.016 +05:30 [ERR] Test failed for Create Account. 
+ Exception:   Test failed for Create Account
+  Expected: True
+  But was:  False
+
