@@ -1,0 +1,39 @@
+2023-12-28 12:28:06.464 +05:30 [INF] Google Search Test
+2023-12-28 12:28:06.497 +05:30 [INF] ************************************************
+2023-12-28 12:28:06.558 +05:30 [INF] Starting the Google search test
+2023-12-28 12:28:06.558 +05:30 [INF] Starting the Google search test
+2023-12-28 12:28:06.559 +05:30 [INF] Opened Google homepage
+2023-12-28 12:28:06.560 +05:30 [INF] Opened Google homepage
+2023-12-28 12:28:06.805 +05:30 [INF] Entered search text: hp laptop
+2023-12-28 12:28:06.805 +05:30 [INF] Entered search text: hp laptop
+2023-12-28 12:28:09.436 +05:30 [INF] Clicked on the Search button
+2023-12-28 12:28:09.436 +05:30 [INF] Clicked on the Search button
+2023-12-28 12:28:09.475 +05:30 [ERR] Test failed for Google Search Test. 
+ Exception: 
+   Search results page title does not contain 'hp laptop'
+  Expected: String containing "aa"
+  But was:  "hp laptop - Google Search"
+
+2023-12-28 12:28:09.477 +05:30 [INF] ----------------------
+2023-12-28 12:28:10.371 +05:30 [INF] Starting the Google search test
+2023-12-28 12:28:10.371 +05:30 [INF] Starting the Google search test
+2023-12-28 12:28:10.371 +05:30 [INF] Opened Google homepage
+2023-12-28 12:28:10.371 +05:30 [INF] Opened Google homepage
+2023-12-28 12:28:10.577 +05:30 [INF] Entered search text: selenium
+2023-12-28 12:28:10.577 +05:30 [INF] Entered search text: selenium
+2023-12-28 12:28:12.118 +05:30 [INF] Clicked on the Search button
+2023-12-28 12:28:12.118 +05:30 [INF] Clicked on the Search button
+2023-12-28 12:28:12.125 +05:30 [ERR] Test failed for Google Search Test. 
+ Exception: 
+ Multiple failures or warnings in test:
+  1)   Search results page title does not contain 'hp laptop'
+  Expected: String containing "aa"
+  But was:  "hp laptop - Google Search"
+
+  2)   Search results page title does not contain 'selenium'
+  Expected: String containing "aa"
+  But was:  "selenium - Google Search"
+
+
+2023-12-28 12:28:12.125 +05:30 [INF] ----------------------
+2023-12-28 12:28:13.448 +05:30 [INF] ************************************************
